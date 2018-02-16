@@ -12,13 +12,17 @@ public class ReviewsRepository {
 	Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewsRepository() {
-		Review Fortnight = new Review(21L, "Fortnight", "Fortnight Description");
-		Review PubG = new Review(22L, "PubG", "PubG Description");
-		Review Battlefield = new Review(23L, "Battlefield 1", "Battlefield1 Description");
+		Review Fortnight = new Review(21L, "Fortnight", "Fortnight Description", "imageurl", "genre");
+		Review PubG = new Review(22L, "PubG", "PubG Description", "imageurl", "genre");
+		Review Battlefield = new Review(23L, "Battlefield 1", "Battlefield1 Description", "imageurl", "genre");
+		Review Madden18 = new Review(24L, "Madden 18", "Madden Description", "imageurl", "genre");
+		Review NBA2K18 = new Review(25L, "NBA2K18", "NBA2K18 Description", "imageurl", "genre");
 
 		reviews.put(Fortnight.getId(), Fortnight);
 		reviews.put(PubG.getId(), PubG);
 		reviews.put(Battlefield.getId(), Battlefield);
+		reviews.put(Madden18.getId(), Madden18);
+		reviews.put(NBA2K18.getId(), NBA2K18);
 
 	}
 
