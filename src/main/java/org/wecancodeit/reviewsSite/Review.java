@@ -5,14 +5,14 @@ public class Review {
 	private Long reviewId;
 	private String product;
 	private String review;
-	private String imageUrl;
+	private String image;
 	private String genre;
 
-	public Review(long reviewId, String product, String review, String imageUrl, String genre) {
+	public Review(long reviewId, String product, String review, String image, String genre) {
 		this.reviewId = reviewId;
 		this.product = product;
 		this.review = review;
-		this.imageUrl = imageUrl;
+		this.image = image;
 		this.genre = genre;
 	}
 
@@ -28,8 +28,8 @@ public class Review {
 		return genre;
 	}
 
-	public String getUrl() {
-		return imageUrl;
+	public String getImage() {
+		return image;
 	}
 
 	public String getReview() {

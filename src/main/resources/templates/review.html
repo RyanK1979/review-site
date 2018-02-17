@@ -4,6 +4,10 @@
 
 <head>
 <title>Xbox game review</title>
+<style>
+body {background-color: AliceBlue;})
+</style>
+
 
 </head>
 
@@ -11,19 +15,17 @@
 
 	<header>
 		<h1>Xbox game review</h1>
-	</header>	
-
+	</header>		
 	
-	
-
+	<article>
 	<div th:each="review: ${reviews}">
 		<p th:text="${review.product}"></p>
 		<p th:text="${review.genre}"></p>
-		<img th:src="${review.imageUrl}" style="height: 300px; width: auto;" />
+		<img th:src="${review.image}" width="500px" height="300px"/>
 		<p th:text="${review.review}"></p>
-		<a href="http://localhost:8080/reviews">Back to home</a>
-		
+		<a href="http://localhost:8080/reviews">Back to home</a>	
 	</div>
+	</article>
 		
 
 
