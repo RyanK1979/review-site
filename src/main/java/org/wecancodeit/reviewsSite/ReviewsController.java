@@ -14,13 +14,13 @@ public class ReviewsController {
 	ReviewsRepository reviewsRepo = new ReviewsRepository();
 
 	@RequestMapping(value = "reviews")
-	public String getAllCourses(Model model) {
+	public String getAllReviews(Model model) {
 		model.addAttribute("reviews", reviewsRepo.findAll());
 		return "reviews";
 	}
 
 	@RequestMapping("review")
-	public String getACourse(@RequestParam Long id, Model model) {
+	public String getAReview(@RequestParam Long id, Model model) {
 		model.addAttribute("reviews", reviewsRepo.findOne(id));
 		return "review";
 	}

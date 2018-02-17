@@ -4,18 +4,27 @@
 
 <head>
 <title>A list of reviews</title>
+<style>
+img {
+display: block;
+max-width: 500px;
+max-height:300px;
+width: auto;
+height: auto;
+}
+</style>
 </head>
 
 <body>
 	<header>
-		<h1>A List of Reviews</h1>
+		<h1>A List of Xbox one game reviews</h1>
 	</header>
 	
-	<div th:each="review: ${reviews}">
-		<h2>
+	<ul th:each="review: ${reviews}">
+		<li>
 			<a th:href="@{/review(id=${review.id})}" th:text="${review.product}"></a>
-		</h2>
-	</div>
+		</li>
+	</ul>
 
 
 </body>
