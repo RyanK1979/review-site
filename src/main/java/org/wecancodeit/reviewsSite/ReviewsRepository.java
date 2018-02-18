@@ -12,7 +12,7 @@ public class ReviewsRepository {
 	Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewsRepository() {
-		Review Fortnight = new Review(21L, "Fortnight",
+		Review Fortnite = new Review(21L, "Fortnite",
 				"Battle royale gameplay done in the third person.  You start off parachuting into the world."
 						+ "Then with your team you are vying to be the last team standing.  You can loot fallen enemies, find loot boxes, and build defenses, and "
 						+ "even some traps!",
@@ -30,7 +30,7 @@ public class ReviewsRepository {
 				"The quinessential NBA game, I feel like they have taken there focus a little to much into the realm of MyCareer mode which I am not the biggest fan.  Thankfully the Cavs are still good, and LeBron is still rediculous, and the rosters are updated so I don't have to see Isiah Thomas anymore.  Great game if you can get past them pestering you for microtransactions.",
 				"/images/nba2k.jpg", "Basketball");
 
-		reviews.put(Fortnight.getId(), Fortnight);
+		reviews.put(Fortnite.getId(), Fortnite);
 		reviews.put(PubG.getId(), PubG);
 		reviews.put(Battlefield.getId(), Battlefield);
 		reviews.put(Madden18.getId(), Madden18);
